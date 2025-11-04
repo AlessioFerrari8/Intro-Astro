@@ -1,46 +1,33 @@
-# Astro Starter Kit: Basics
+# Installazione 
 
-```sh
-npm create astro@latest -- --template basics
+Controllo npm e node.js
+
+```
+node -v
+npm -v
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+In alternativa si potrebbe usare yarn o pnpm, per quanto riguarda i pacchetti e moduli necessari.
+In alternativa a node.js si potrebbe usare deno o bun.
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+Installiamo 
+```
+npm create astro@latest
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Dopo aver eseguito il comando, risponderemo alle domande che ci verranno poste per configurare il progetto Astro.
+E arriviamo a creare il nostro primo progetto Astro.
 
-## 🧞 Commands
+## Aggiunta frameworks / librerie
+Per aggiungere framework o librerie al nostro progetto Astro, possiamo usare i comandi astro add
 
-All commands are run from the root of the project, from a terminal:
+## Per guardare la preview
+Solito
+```
+npm run dev
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Per buildare il progetto
+```
+npx astro build
+```
