@@ -17,14 +17,14 @@ try {
         <p class="text-lg">This is the about page of our Astro site.</p>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 background-gray-100 p-6 rounded-lg">
         {users.map((user: any) => (
-            <div>
-                <div>
-                    <img src={user.picture.medium} alt={`${user.name.first} ${user.name.last}`} />
+            <div class="border p-4 rounded">
+                <div class="mb-4 text-center ">
+                    <img src={user.picture.medium} alt={`${user.name.first} ${user.name.last}`} class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
                     <h2>Name: {user.name.first} {user.name.last}</h2>
                 </div>
-                <div>
+                <div class="text-center">
                     <div><strong>Email:</strong> {user.email}</div>
                     <div><strong>Gender:</strong> {user.gender}</div>
                     <div><strong>City:</strong> {user.location.city}</div>
