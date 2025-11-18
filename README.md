@@ -30,4 +30,18 @@ npm run dev
 ## Per buildare il progetto
 ```
 npx astro build
+npm run build
+```
+
+## Tipologia di siti
+Siti statici
+
+
+# Build
+Quando facciamo il build del progetto, Astro genera una cartella `dist/` che contiene tutti i file statici pronti per essere distribuiti su un server web o un servizio di hosting statico.
+Tutti i file contenuti in /public vengono copiati direttamente nella cartella `dist/` durante il processo di build. 
+
+```bash
+cd dist
+npx five-server
 ```
